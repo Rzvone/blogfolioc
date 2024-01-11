@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-[80vh] w-full mt-[10vh] px-20">
+    <div className="h-[80vh] w-full mt-[10vh] px-20 select-none">
       <Particle />
       <div className="grid-cols-1 grid lg:grid-cols-2 gap-[3rem] mx-auto mt-10">
         <div className="z-[100] mx-auto">
@@ -76,7 +76,7 @@ const Hero = () => {
               rounded-md
               "
             >
-              <p>Whats&apos;app message</p>
+              <p>Message Me</p>
               <ChatBubbleOvalLeftEllipsisIcon className="w-[1.6rem] h-[1.7rem] text-white"/>
             </button>
           </div>

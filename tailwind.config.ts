@@ -15,6 +15,12 @@ const config: Config = {
       },
       fontFamily: {
         primary: ['Poppins'],
+      },
+      screens: {
+        '3xs': '240px',
+        '2xs': '320px',
+        xs: '475px',
+        smd: '760px',
       }
     },
   },

@@ -1,23 +1,29 @@
-'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
+import AuthLinks from '../authLinks/AuthLinks'
+import Image from 'next/image'
+
 
 
 
 const Navbar = () => {
-
-  const [nav, setNav] = useState(false)
-  const openNav = () => setNav(true)
   
   return (
-    <div className='container-nav'>
-        <div className='logo'>raz<span className='text-green-600'>van</span></div>
-        <div className='links'>
-          <Link href='/'>Homepage</Link>
-          <Link href='/about'>About</Link>
-          <Link href='/contact'>Contact</Link>
-          <Link href='/blog'>Blog</Link>
-        </div>
+    <div className='container-nav select-none'>
+      <div className='social'>
+        <Image src="/images/icons/facebook.png" alt="facebook" width={24} height={24}/>
+        <Image src="/images/icons/facebook.png" alt="instagram" width={24} height={24}/>
+        <Image src="/images/icons/facebook.png" alt="linkedin" width={24} height={24}/>
+        <Image src="/images/icons/facebook.png" alt="github" width={24} height={24}/>
+      </div>
+      <div className='logo'>raz<span className='text-green-600'>van</span></div>
+      <div className='links'>
+        <Link href='/' className='link'>Homepage</Link>
+        <Link href='/about' className='link'>About</Link>
+        <Link href='/contact' className='link'>Contact</Link>
+        <Link href='/blog' className='link'>Blog</Link>
+        <AuthLinks />
+      </div>
     </div>
   )
 }

@@ -33,28 +33,65 @@ body {
     @apply text-4xl font-bold;
   }
 
+  /* Theme when implemented */
+  .dark {
+    @apply bg-[#0f172a] text-[#ddd]
+  }
 
   /* Navbar */
-  .container-nav{
+  .container-nav {
     @apply flex items-center justify-between h-[100px] bg-[#110016]
   }
 
   .social{
-    @apply flex flex-1 gap-2.5 
+    @apply 2xl:flex 2xl:flex-1 2xl:gap-2.5 items-center 2xl:ml-10 md:flex md:flex-1 md:ml-10 md:gap-2.5 2xs:hidden
+    3xs:hidden sm:hidden md:hidden
   }
 
   .logo {
-    @apply flex-1 text-center text-[36px] font-bold justify-center items-center
+    @apply flex-1 text-center 2xl:text-[36px] font-bold justify-center items-center md:text-[32px]
+    sm:text-start sm:ml-5 xs:text-start xs:ml-5 xs:text-[32px] 2xs:text-start 2xs:ml-5
+    2xs:text-[32px]  sm:text-[32px] lg:text-[32px]
   }
 
-  .links{
-    @apply flex items-center gap-5 flex-1 text-[20px] justify-center
+  .links {
+    @apply flex items-center 2xl:gap-5 2xl:mr-auto flex-1 2xl:text-[20px] justify-center md:mr-5 sm:mr-5 md:text-[18px] md:gap-[15px] sm:gap-[10px]
   }
 
-  .mobile-nav{
-    @apply fixed transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[10000000] bg-[#0d0310]
+  .link{
+    @apply sm:hidden xs:hidden 2xs:hidden 3xs:hidden md:block xl:block lg:block 2xl:justify-center
+
+  }
+  .link-burger {
+    @apply 2xl:hidden md:hidden lg:hidden xl:hidden sm:flex 3xs:flex 2xs:flex xs:flex
+    text-center justify-center my-20 text-[36px] font-bold align-middle
   }
 
+  .burger {
+    @apply w-5 h-5 2xl:hidden sm:hidden 3xs:justify-center 2xs:justify-end
+  }
+
+  .burger-menu {
+    @apply absolute top-[100px] left-0 bg-[#110016] h-full w-full z-[1000] flex-col items-center
+    justify-center gap-[50px] text-[36px]
+  }
+
+
+  /* authLinks */
+
+  .login {
+    @apply text-red-500 md:hidden sm:hidden 2xs:hidden 3xs:hidden lg:block xl:block 2xl:block
+  }
+
+  /* ThemeToggler */
+
+  .container-theme {
+    @apply flex w-10 h-5 relative rounded-full cursor-pointer bg-black items-center justify-between
+  }
+
+  .ball {
+    @apply w-[15px] h-[15px] bg-white rounded-full absolute left-[1px] 
+  }
 
 
   /* Footer */
