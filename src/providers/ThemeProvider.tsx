@@ -1,18 +1,18 @@
-'use client'
-import { ThemeContext } from '@/context/themeContext'
-import React, { useContext } from 'react'
+// 'use client'
+// import { ThemeContext } from 'providers/ThemeContext'
+// import React, { useContext } from 'react'
 
-interface Props {
-    children: string
-}
+// interface Props {
+//     children: string
+// }
 
-const ThemeProvider = ({children}: Props) => {
+// const ThemeProvider = ({children}: Props) => {
 
-    const { theme } = useContext(ThemeContext)
+//     const { theme } = useContext(ThemeContext)
 
-  return (
-    <div className={theme}>{children}</div>
-  )
-}
+//   return (
+//     <div className={theme}>{children}</div>
+//   )
+// }
 
-export default ThemeProvider
+// export default ThemeProvider
