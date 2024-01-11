@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +26,36 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-4xl font-bold;
+  }
+
+
+  /* Navbar */
+  .container-nav{
+    @apply flex items-center justify-between h-[100px] bg-[#110016]
+  }
+
+  .social{
+    @apply flex flex-1 gap-2.5 
+  }
+
+  .logo {
+    @apply flex-1 text-center text-[36px] font-bold justify-center items-center
+  }
+
+  .links{
+    @apply flex items-center gap-5 flex-1 text-[20px] justify-center
+  }
+
+  .mobile-nav{
+    @apply fixed transform transition-all duration-300 top-0 left-0 right-0 bottom-0 z-[10000000] bg-[#0d0310]
+  }
+
+
+
+  /* Footer */
 }
