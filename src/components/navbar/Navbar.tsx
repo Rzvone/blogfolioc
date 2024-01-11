@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import AuthLinks from '../authLinks/AuthLinks'
 import Image from 'next/image'
-import ThemeToggle from '../themeToggle/ThemeToggle'
+
 
 
 
@@ -18,11 +18,10 @@ const Navbar = () => {
       </div>
       <div className='logo'>raz<span className='text-green-600'>van</span></div>
       <div className='links'>
-        <ThemeToggle />
-        <Link href='/'>Homepage</Link>
-        <Link href='/about'>About</Link>
-        <Link href='/contact'>Contact</Link>
-        <Link href='/blog'>Blog</Link>
+        <Link href='/' className='link'>Homepage</Link>
+        <Link href='/about' className='link'>About</Link>
+        <Link href='/contact' className='link'>Contact</Link>
+        <Link href='/blog' className='link'>Blog</Link>
         <AuthLinks />
       </div>
     </div>
