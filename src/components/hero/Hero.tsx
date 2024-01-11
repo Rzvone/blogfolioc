@@ -76,7 +76,7 @@ const Hero = () => {
               rounded-md
               "
             >
-              <p>Whats'app message</p>
+              <p>Whats&apos;app message</p>
               <ChatBubbleOvalLeftEllipsisIcon className="w-[1.6rem] h-[1.7rem] text-white"/>
             </button>
           </div>
