@@ -1,8 +1,22 @@
+import Link from 'next/link'
 import React from 'react'
 
 const AuthLinks = () => {
+
+  // temp
+  const status = 'notauthenticated'
+
   return (
-    <div>AuthLinks</div>
+    <>
+      {status === 'notauthenticated' ? (
+        <Link href='/login'>Login</Link>
+      ) : (
+        <>
+          <Link href='/write'>Write</Link>
+          <span className='cursor-pointer'>Logout</span>
+        </>
+      )}
+    </>
   )
 }
 

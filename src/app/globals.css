@@ -35,19 +35,19 @@ body {
 
 
   /* Navbar */
-  .container-nav{
+  .container-nav {
     @apply flex items-center justify-between h-[100px] bg-[#110016]
   }
 
   .social{
-    @apply flex flex-1 gap-2.5 
+    @apply flex flex-1 gap-2.5 ml-10
   }
 
   .logo {
     @apply flex-1 text-center text-[36px] font-bold justify-center items-center
   }
 
-  .links{
+  .links {
     @apply flex items-center gap-5 flex-1 text-[20px] justify-center
   }
 
