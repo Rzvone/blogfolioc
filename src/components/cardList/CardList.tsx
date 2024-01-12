@@ -5,8 +5,8 @@ import Card from '../card/Card'
 
 const CardList = () => {
   return (
-    <div className='flex-5'>
-      <h1 className='my-[50px] ml-10'>Recent Posts</h1>
+    <div className='flex-5 select-none'>
+      <h1 className='my-[50px] ml-10 text-[28px]'>Recent Posts</h1>
       <div className='posts'>
         <Card />
         <Card />

@@ -4,17 +4,18 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="mb-[50px] flex gap-[50px] items-center">
-      <div className="flex-1 h-[350px] relative">
+    <div className="mb-[50px] flex gap-[50px] items-center select-none">
+      <div className="flex-1 h-[350px] relative lg:block sm:hidden xs:hidden">
         <Image
           src="/images/images/code.jpg"
           alt="code"
           width={400}
           height={400}
           className="object-cover"
+          draggable={false}
         />
       </div>
-      <div className="flex-1 flex flex-col gap-[20px]">
+      <div className="flex-1 flex flex-col gap-[20px] 2xl:mr-[200px] ">
         <div className="details">
             <span className="text-gray-600">11.11.2024 - </span>
             <span className="text-red-700 font-bold">Frontend</span>

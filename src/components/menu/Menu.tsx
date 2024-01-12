@@ -4,9 +4,9 @@ import React from 'react'
 
 const Menu = () => {
   return (
-    <div className='flex-2 mr-5'>
+    <div className='flex-2 mr-5 sm:hidden md:block xs:hidden 2xs:hidden 3xs:hidden select-none'>
       <h2 className='text-gray-600 text-[16px] font-semibold'>What&apos;s hot</h2>
-      <h1 className='text-[28px] mt-[60px] mb-5'>Most Popular</h1>
+      <h1 className='text-[28px] mt-[40px] mb-5'>Most Popular</h1>
       <div className='items'>
         <Link href='/' className='flex items-center gap-[20px]' >
           <div className='flex-1 aspect-square relative'>
@@ -16,6 +16,7 @@ const Menu = () => {
               width={400}
               height={400}
               className='w-full rounded-full border border-slate-600 object-cover'
+              draggable={false}
             />
           </div>
           <div className='flex flex-4 flex-col gap-2'>
@@ -35,6 +36,7 @@ const Menu = () => {
               width={400}
               height={400}
               className='w-full rounded-full border border-slate-600 object-cover'
+              draggable={false}
             />
           </div>
           <div className='flex flex-4 flex-col gap-2'>
@@ -54,6 +56,7 @@ const Menu = () => {
               width={400}
               height={400}
               className='w-full rounded-full border border-slate-600 object-cover'
+              draggable={false}
             />
           </div>
           <div className='flex flex-4 flex-col gap-2'>

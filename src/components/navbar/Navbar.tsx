@@ -9,7 +9,7 @@ import Image from 'next/image'
 const Navbar = () => {
   
   return (
-    <div className='container-nav select-none'>
+    <div className='container-nav select-none z-[1000000]'>
       <div className='social'>
         <Image src="/images/icons/facebook.png" alt="facebook" width={24} height={24}/>
         <Image src="/images/icons/facebook.png" alt="instagram" width={24} height={24}/>
