@@ -19,6 +19,7 @@ const Navbar = () => {
       <div className='logo'>raz<span className='text-green-600'>van</span></div>
       <div className='links'>
         <Link href='/' className='link'>Homepage</Link>
+        <Link href='/projects' className='link'>Projects</Link>
         <Link href='/about' className='link'>About</Link>
         <Link href='/contact' className='link'>Contact</Link>
         <Link href='/blog' className='link'>Blog</Link>

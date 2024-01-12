@@ -24,6 +24,7 @@ const AuthLinks = () => {
       {open && (
         <div className='burger-menu'>
           <Link href='/' className='link-burger'>Homepage</Link>
+          <Link href='/projects' className='link-burger'>Projects</Link>
           <Link href='/about' className='link-burger'>About</Link>
           <Link href='/contact' className='link-burger'>Contact</Link>
           <Link href='/blog' className='link-burger'>Blog</Link>

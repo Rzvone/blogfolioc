@@ -2,7 +2,10 @@
 import React from "react";
 import Particle from "../particles/Particle";
 import TextEffect from "../textEffect/TextEffect";
-import { ArrowDownTrayIcon, ChatBubbleOvalLeftEllipsisIcon } from "@heroicons/react/20/solid";
+import {
+  ArrowDownTrayIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+} from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 const Hero = () => {
@@ -17,7 +20,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-[80vh] w-full mt-[10vh] px-20 select-none">
+    <div className="flex flex-col mt-[5vh] px-10 select-none">
       <Particle />
       <div className="grid-cols-1 grid lg:grid-cols-2 gap-[3rem] mx-auto mt-10">
         <div className="z-[100] mx-auto">
@@ -58,7 +61,7 @@ const Hero = () => {
               <ArrowDownTrayIcon className="w-[1.6rem] h-[1.7rem] text-black" />
             </button>
             <button
-            onClick={() => window.open("https://wa.me/40756168137")}
+              onClick={() => window.open("https://wa.me/40756168137")}
               className="
               px-[2rem]
               hover:bg-green-400
@@ -77,20 +80,23 @@ const Hero = () => {
               "
             >
               <p>Message Me</p>
-              <ChatBubbleOvalLeftEllipsisIcon className="w-[1.6rem] h-[1.7rem] text-white"/>
+              <ChatBubbleOvalLeftEllipsisIcon className="w-[1.6rem] h-[1.7rem] text-white" />
             </button>
           </div>
         </div>
         <div className="lg:w-[500px] lg:h-[500px] md:h-[500px] md:w-[500px] mx-auto relative">
-        <Image
-          src="/images/developer.webp"
-          alt="developer"
-          objectFit="cover"
-          className="rounded-full"
-          layout="fill"
-          draggable={false}
-        />
+          <Image
+            src="/images/developer.webp"
+            alt="developer"
+            objectFit="cover"
+            className="rounded-full"
+            layout="fill"
+            draggable={false}
+          />
+        </div>
       </div>
+      <div>
+        <h1>This will be a Blogfolio where I will document my journey to becoming a web dev</h1>
       </div>
     </div>
   );
