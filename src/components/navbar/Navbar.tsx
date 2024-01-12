@@ -8,6 +8,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   
+
   return (
     <div className='container-nav select-none z-[1000000]'>
       <div className='social'>
@@ -16,7 +17,7 @@ const Navbar = () => {
         <Image src="/images/icons/facebook.png" alt="linkedin" width={24} height={24}/>
         <Image src="/images/icons/facebook.png" alt="github" width={24} height={24}/>
       </div>
-      <div className='logo'>raz<span className='text-green-600'>van</span></div>
+      <Link href="/" className='logo'>raz<span className='text-green-600 cursor-default'>van</span></Link>
       <div className='links'>
         <Link href='/' className='link'>Homepage</Link>
         <Link href='/projects' className='link'>Projects</Link>

@@ -15,7 +15,7 @@ const Card = () => {
           draggable={false}
         />
       </div>
-      <div className="flex-1 flex flex-col gap-[20px] 2xl:mr-[200px] ">
+      <div className="flex-1 flex flex-col gap-[20px] 2xl:mr-[300px] ">
         <div className="details">
             <span className="text-gray-600">11.11.2024 - </span>
             <span className="text-red-700 font-bold">Frontend</span>
@@ -28,7 +28,7 @@ const Card = () => {
             optio ratione modi ipsam autem quidem ex 
             aliquam placeat culpa, amet eveniet. Non perspiciatis consequatur saepe cumque distinctio.
         </p>
-        <Link href='/' className="bg-slate-600 w-fit p-1 rounded-lg">Read more</Link>
+        <Link href='/' className="bg-slate-600 font-bold w-fit p-2 rounded-lg hover:bg-slate-400 hover:text-black">Read more</Link>
         <div className="border border-[#6e0a1e] w-full px-2 py-0"></div>
       </div>
     </div>

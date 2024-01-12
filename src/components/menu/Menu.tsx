@@ -13,8 +13,8 @@ const Menu = () => {
             <Image 
               src="/images/images/code.jpg"
               alt="code"
-              width={400}
-              height={400}
+              width={150}
+              height={150}
               className='w-full rounded-full border border-slate-600 object-cover'
               draggable={false}
             />
@@ -33,8 +33,8 @@ const Menu = () => {
             <Image 
               src="/images/images/code.jpg"
               alt="code"
-              width={400}
-              height={400}
+              width={150}
+              height={150}
               className='w-full rounded-full border border-slate-600 object-cover'
               draggable={false}
             />
@@ -53,9 +53,9 @@ const Menu = () => {
             <Image 
               src="/images/images/code.jpg"
               alt="code"
-              width={400}
-              height={400}
-              className='w-full rounded-full border border-slate-600 object-cover'
+              width={150}
+              height={150}
+              className='rounded-full border border-slate-600 object-cover'
               draggable={false}
             />
           </div>

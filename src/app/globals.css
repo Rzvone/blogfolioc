@@ -28,6 +28,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* scrollbar */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 @layer components {
   .heading-1 {
     @apply text-4xl font-bold;
