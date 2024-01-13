@@ -9,13 +9,13 @@ const Menu = () => {
       <h1 className='text-[28px] mt-[40px] mb-5'>Most Popular</h1>
       <div className='items'>
         <Link href='/' className='flex items-center gap-[20px]' >
-          <div className='flex-1 aspect-square relative'>
+          <div className='flex-1 aspect-square relative mb-5'>
             <Image 
               src="/images/images/code.jpg"
               alt="code"
               width={150}
               height={150}
-              className='w-full rounded-full border border-slate-600 object-cover'
+              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:w-full lg:h-full'
               draggable={false}
             />
           </div>
@@ -28,14 +28,14 @@ const Menu = () => {
             </div>
           </div>
         </Link>
-        <Link href='/' className='flex items-center gap-[20px]' >
+        <Link href='/' className='flex items-center gap-[20px] mb-5' >
           <div className='flex-1 aspect-square relative'>
             <Image 
               src="/images/images/code.jpg"
               alt="code"
               width={150}
               height={150}
-              className='w-full rounded-full border border-slate-600 object-cover'
+              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:w-full lg:h-full '
               draggable={false}
             />
           </div>
@@ -55,7 +55,7 @@ const Menu = () => {
               alt="code"
               width={150}
               height={150}
-              className='rounded-full border border-slate-600 object-cover'
+              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:w-full lg:h-full'
               draggable={false}
             />
           </div>

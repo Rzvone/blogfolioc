@@ -12,10 +12,18 @@ const Navbar = () => {
   return (
     <div className='container-nav select-none z-[1000000]'>
       <div className='social'>
-        <Image src="/images/icons/facebook.png" alt="facebook" width={24} height={24}/>
-        <Image src="/images/icons/facebook.png" alt="instagram" width={24} height={24}/>
-        <Image src="/images/icons/facebook.png" alt="linkedin" width={24} height={24}/>
-        <Image src="/images/icons/facebook.png" alt="github" width={24} height={24}/>
+        <Link href='https://www.facebook.com/BBRoggo' target='_blank'>
+          <Image src="/images/icons/facebook.png" alt="facebook" width={24} height={24}/>
+        </Link>
+        <Link href='https://www.instagram.com/roggorzv/' target='_blank'>
+          <Image src="/images/icons/instagram.png" alt="instagram" width={24} height={24}/>
+        </Link>
+        <Link href='https://www.linkedin.com/in/razvan-bobonea-446200139/' target='_blank'>
+          <Image src="/images/icons/linkedin.png" alt="linkedin" width={24} height={24}/>
+        </Link>
+        <Link href="https://github.com/Rzvone" target='_blank'>
+          <Image src="/images/icons/github.png" alt="github" width={24} height={24}/>
+        </Link>
       </div>
       <Link href="/" className='logo'>raz<span className='text-green-600 cursor-default'>van</span></Link>
       <div className='links'>
