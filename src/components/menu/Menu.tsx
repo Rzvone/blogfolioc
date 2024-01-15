@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import MenuCategories from '../menuCategories/MenuCategories'
 
 const Menu = () => {
   return (
-    <div className='flex-2 mr-5 sm:hidden md:block xs:hidden 2xs:hidden 3xs:hidden select-none'>
+    <div className='flex-2 mr-5 sm:hidden md:hidden xs:hidden 2xs:hidden 3xs:hidden lg:block select-none'>
       <h2 className='text-gray-600 text-[16px] font-semibold'>What&apos;s hot</h2>
       <h1 className='text-[28px] mt-[40px] mb-5'>Most Popular</h1>
       <div className='flex flex-col items-center gap-[35px] mt-[35px] mb-[60px] ml-[-130px]'>
@@ -39,6 +40,7 @@ const Menu = () => {
           </div>
         </Link>
       </div>
+      <MenuCategories />
       <h2 className='text-gray-600 text-[16px] font-semibold'>Chosen by editor</h2>
       <h1 className='text-[28px] mt-[40px] mb-5'>Editor&apos; pick</h1>
       <div className='flex flex-col items-center gap-[35px] mt-[35px] mb-[60px]'>
@@ -49,7 +51,7 @@ const Menu = () => {
               alt="code"
               width={150}
               height={150}
-              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:w-full lg:h-full'
+              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:h-[100px] lg:w-[100px] xl:w-full xl:h-full sm:hidden xs:hidden 2xs:hidden 3xs:hidden'
               draggable={false}
             />
           </div>
@@ -69,7 +71,7 @@ const Menu = () => {
               alt="code"
               width={150}
               height={150}
-              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:w-full lg:h-full '
+              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:h-[100px] lg:w-[100px] xl:w-full xl:h-full sm:hidden xs:hidden 2xs:hidden 3xs:hidden'
               draggable={false}
             />
           </div>
@@ -89,7 +91,7 @@ const Menu = () => {
               alt="code"
               width={150}
               height={150}
-              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:w-full lg:h-full'
+              className='rounded-full border border-slate-600 object-cover md:hidden lg:block lg:h-[100px] lg:w-[100px] xl:w-full xl:h-full sm:hidden xs:hidden 2xs:hidden 3xs:hidden'
               draggable={false}
             />
           </div>

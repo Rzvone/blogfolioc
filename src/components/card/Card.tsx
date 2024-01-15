@@ -5,17 +5,17 @@ import React from "react";
 const Card = () => {
   return (
     <div className="mb-[50px] flex gap-[50px] items-center select-none">
-      <div className="flex-1 h-[350px] relative lg:block sm:hidden xs:hidden">
+      <div className="flex-2 relative lg:hidden sm:hidden xs:hidden h-[350px] md:hidden xl:block 2xl:block">
         <Image
           src="/images/images/code.jpg"
           alt="code"
           width={400}
           height={400}
-          className="object-cover"
+          className="object-cover md:hidden lg:block xl:block 2xl:block sm:hidden xs:hidden 2xs:hidden 3xs:hidden"
           draggable={false}
         />
       </div>
-      <div className="flex-1 flex flex-col gap-[20px] 2xl:mr-[300px] ">
+      <div className="flex-1 flex flex-col gap-[20px]">
         <div className="details">
             <span className="text-gray-600">11.11.2024 - </span>
             <span className="text-red-700 font-bold">Frontend</span>

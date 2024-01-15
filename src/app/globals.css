@@ -70,24 +70,25 @@ body::-webkit-scrollbar {
 
   }
   .link-burger {
-    @apply 2xl:hidden md:hidden lg:hidden xl:hidden sm:flex 3xs:flex 2xs:flex xs:flex
+    @apply 2xl:hidden md:block lg:hidden xl:hidden sm:flex 3xs:flex 2xs:flex xs:flex
     text-center justify-center my-20 text-[36px] font-bold align-middle
   }
 
   .burger {
-    @apply w-5 h-5 2xl:hidden sm:hidden 3xs:justify-center 2xs:justify-end
+    @apply w-5 h-5 2xl:hidden sm:block 3xs:justify-center 2xs:justify-end md:hidden lg:hidden xl:hidden
+    sm:ml-[300px] sm:mr-[50px] xs:ml-[200px] xs:mr-[50px] 2xs:ml-[100px] 3xs:ml-[50px]
   }
 
   .burger-menu {
     @apply absolute top-[80px] left-0 bg-[#110016] h-[100vh] w-full z-[1000] flex-col items-center
-    justify-center gap-[50px] text-[36px]
+    justify-center gap-[50px] text-[36px] lg:mr-[50px] md:mr-[50px]
   }
 
 
   /* authLinks */
 
   .login {
-    @apply text-red-500 md:hidden sm:hidden 2xs:hidden 3xs:hidden lg:block xl:block 2xl:block
+    @apply text-red-500 md:block sm:hidden 2xs:hidden 3xs:hidden lg:block xl:block 2xl:block md:mr-[50px]
   }
 
   /* ThemeToggler */
@@ -125,8 +126,11 @@ body::-webkit-scrollbar {
     @apply w-[50px] h-[50px] rounded-full
   }
 
+  /*  @menucategories */
   
-
+  .menuCategories {
+    @apply py-[10px] px-[25px] rounded-lg text-[14px] font-semibold
+  }
 
 
   /* Footer */

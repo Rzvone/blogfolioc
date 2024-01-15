@@ -26,7 +26,7 @@ const Navbar = () => {
         </Link>
       </div>
       <Link href="/" className='logo'>raz<span className='text-green-600 cursor-default'>van</span></Link>
-      <div className='links'>
+      <div className='links lg:mr-[50px]'>
         <Link href='/' className='link'>Homepage</Link>
         <Link href='/projects' className='link'>Projects</Link>
         <Link href='/about' className='link'>About</Link>
