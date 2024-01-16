@@ -132,6 +132,11 @@ body::-webkit-scrollbar {
     @apply py-[10px] px-[25px] rounded-lg text-[14px] font-semibold
   }
 
+  /* prev and next buttons */
+
+  .btns {
+    @apply w-[150px] border-none p-4 bg-red-800 text-white cursor-pointer rounded-lg hover:bg-red-400 hover:text-black font-semibold my-auto mx-auto
+  }
 
   /* Footer */
 

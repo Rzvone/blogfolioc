@@ -40,6 +40,7 @@ const Menu = () => {
           </div>
         </Link>
       </div>
+      <h1 className='text-[28px] mt-[40px] mb-5'>Categories</h1>
       <MenuCategories />
       <h2 className='text-gray-600 text-[16px] font-semibold'>Chosen by editor</h2>
       <h1 className='text-[28px] mt-[40px] mb-5'>Editor&apos; pick</h1>
