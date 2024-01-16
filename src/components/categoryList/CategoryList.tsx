@@ -4,7 +4,7 @@ import React from "react";
 
 const CategoryList = () => {
   return (
-    <div className="catContainer select-none">
+    <div className="catContainer select-none md:mx-auto 2xs:ml-[-80px] 2xs:mr-[-90px] 3xs:ml-[-80px] 3xs:mr-[-90px] xs:ml-[-80px] xs:mr-[-90px]">
       <h1 className="catTitle">Popular Categories</h1>
       <div className="categories">
         <Link href="/blog?cat=style" className="category font-bold bg-pink-700 w-full z-[1000] hover:bg-pink-400 hover:text-black"  draggable={false}>

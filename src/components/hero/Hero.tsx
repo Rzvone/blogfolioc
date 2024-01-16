@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col mt-[5vh] px-10 select-none">
       <Particle />
-      <div className="grid-cols-1 grid lg:grid-cols-2 gap-[3rem] mx-auto mt-10">
+      <div className="grid-cols-1 grid lg:grid-cols-2 gap-[3rem] md:mx-auto mt-10 2xs:ml-[-80px] 2xs:mr-[-90px] 3xs:ml-[-80px] 3xs:mr-[-90px] xs:ml-[-80px] xs:mr-[-90px]">
         <div className="z-[100] mx-auto">
           <h1 className="text-[35px]">Hello, I&apos;m Raz</h1>
           <TextEffect />
@@ -95,7 +95,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div>
+      <div className="grid-cols-1 grid lg:grid-cols-2 gap-[3rem] md:mx-auto mt-10 2xs:ml-[-80px] 2xs:mr-[-90px] 3xs:ml-[-80px] 3xs:mr-[-90px] xs:ml-[-80px] xs:mr-[-90px]">
         <h1>This will be a Blogfolio where I will document my journey to becoming a web dev</h1>
       </div>
     </div>
