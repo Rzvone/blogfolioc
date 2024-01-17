@@ -138,4 +138,8 @@ body::-webkit-scrollbar {
   .footer {
     @apply flex items-center justify-center h-[85px] bg-[#110016] relative bottom-0 mb-0 z-[1000]
   }
+
+  .footer-link {
+    @apply hover:text-green-400 text-gray-400
+  }
 }

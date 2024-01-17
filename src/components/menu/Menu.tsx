@@ -6,8 +6,8 @@ import MenuCategories from '../menuCategories/MenuCategories'
 const Menu = () => {
   return (
     <div className='flex-2 mr-5 sm:hidden md:hidden xs:hidden 2xs:hidden 3xs:hidden lg:block select-none'>
-      <h2 className='text-gray-600 text-[16px] font-semibold'>What&apos;s hot</h2>
-      <h1 className='text-[28px] mt-[40px] mb-5'>Most Popular</h1>
+      <h2 className='text-gray-600 text-[16px] font-semibold mt-10'>What&apos;s hot</h2>
+      <h1 className='text-[28px] mt-1 mb-5'>Most Popular</h1>
       <div className='flex flex-col items-center gap-[35px] mt-[35px] mb-[60px] ml-[-130px]'>
         <Link href='/' className='flex items-center gap-[20px]' >
           <div className='flex flex-4 flex-col gap-2'>
