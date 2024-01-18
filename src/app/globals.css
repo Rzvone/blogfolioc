@@ -149,4 +149,11 @@ body::-webkit-scrollbar {
   .article-p {
     @apply text-[18px] text-gray-400 mb-5
   }
+
+
+  /* login */
+
+  .socialButton {
+    @apply p-5 rounded-lg font-bold cursor-pointer
+  }
 }
