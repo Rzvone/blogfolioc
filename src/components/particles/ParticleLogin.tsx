@@ -24,9 +24,9 @@ const ParticleBlog = () => {
         loaded={particlesLoaded}
         options={{
           background: {
-            // color: {
-            //     value: '#000',
-            // },
+            color: {
+                value: '#130019',
+            },
           },
           fpsLimit: 120,
           interactivity: {
@@ -53,11 +53,11 @@ const ParticleBlog = () => {
           },
           particles: {
             color: {
-              value: "#4997d0",
+              value: "#bf00ff",
             },
             links: {
               color: "#ffffff",
-              distance: 120,
+              distance: 180,
               enable: true,
               opacity: 0.5,
               width: 1,
@@ -77,16 +77,16 @@ const ParticleBlog = () => {
                 enable: true,
                 area: 800,
               },
-              value: 30,
+              value: 60,
             },
             opacity: {
               value: 0.5,
             },
             shape: {
-              type: "square",
+              type: "triangle",
             },
             size: {
-              value: { min: 2, max: 5 },
+              value: { min: 2, max: 3 },
             },
           },
           detectRetina: true,
