@@ -3,7 +3,7 @@ import React from 'react'
 
 const MenuCategories = () => {
   return (
-    <div className='mt-[35px] mb-[60px] flex wrap gap-10 '>
+    <div className='mt-[35px] mb-[60px] flex wrap gap-10'>
         <Link 
             href="/blog?cat=frontend"
             className='menuCategories bg-pink-700 w-full z-[1000] hover:bg-pink-400 hover:text-black'

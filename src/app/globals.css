@@ -20,7 +20,7 @@
 
 body {
   color: white;
-  background: black;
+  background-color: black;
 }
 
 /* scrollbar */
@@ -141,5 +141,12 @@ body::-webkit-scrollbar {
 
   .footer-link {
     @apply hover:text-green-400 text-gray-400
+  }
+
+
+  /* article */
+
+  .article-p {
+    @apply text-[18px] text-gray-400 mb-5
   }
 }

@@ -35,16 +35,16 @@ const Footer = () => {
         <div className='flex flex-col gap-2'>
           <span className='font-bold text-green-600 underline'>Links</span>
           <Link href='/' className='footer-link'>Homepage</Link>
-          <Link href='/' className='footer-link'>Projects</Link>
-          <Link href='/' className='footer-link'>About</Link>
-          <Link href='/' className='footer-link'>Contact</Link>
-          <Link href='/' className='footer-link'>Blog</Link>
+          <Link href='/projects' className='footer-link'>Projects</Link>
+          <Link href='/about' className='footer-link'>About</Link>
+          <Link href='/contact' className='footer-link'>Contact</Link>
+          <Link href='/blog' className='footer-link'>Blog</Link>
         </div>
         <div className='flex flex-col gap-2'>
           <span className='font-bold text-green-600 underline'>Tags</span>
-          <Link href='/' className='footer-link'>Frontend</Link>
-          <Link href='/' className='footer-link'>Backend</Link>
-          <Link href='/' className='footer-link'>DevOps</Link>
+          <Link href='/frontend' className='footer-link'>Frontend</Link>
+          <Link href='/backend' className='footer-link'>Backend</Link>
+          <Link href='/devops' className='footer-link'>DevOps</Link>
         </div>
       </div>
     </div>
