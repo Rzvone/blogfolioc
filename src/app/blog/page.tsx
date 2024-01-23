@@ -5,7 +5,7 @@ import Menu from '@/components/menu/Menu'
 import ParticleBlog from '@/components/particles/ParticleBlog'
 import React from 'react'
 
-const Blog = ({searchParams}) => {
+const Blog = ({searchParams}: any) => {
 
   const page = parseInt(searchParams.page) || 1;
   const { cat } = searchParams;
