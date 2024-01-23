@@ -14,7 +14,7 @@ const Write = () => {
     const [title, setTitle] = useState("");
     const [cat, setCat] = useState("");
     const [open, setOpen] = useState(false);
-    const [file, setFile] = useState(null);
+    const [file, setFile] = useState<File | null>(null);
 
 
 
@@ -65,7 +65,11 @@ const Write = () => {
                     <input 
                         type='file'
                         id='image'
-                        onChange={(e) => setFile(e.target.files[0])}
+                        onChange={(e) => {
+                            if(e.target.files) {
+                                setFile(e.target.files[0])
+                            }
+                        }}
                         style={{display: 'none'}}
                     />
                     <button className='addButton'>
