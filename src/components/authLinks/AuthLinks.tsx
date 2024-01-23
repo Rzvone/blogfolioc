@@ -1,5 +1,6 @@
 'use client'
 import { Bars3Icon } from '@heroicons/react/20/solid'
+import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -8,16 +9,16 @@ const AuthLinks = () => {
   const [open, setOpen] = useState(false)
 
   // temp
-  const status = 'notauthenticated'
+  const { status } = useSession()
 
   return (
     <>
-      {status === 'notauthenticated' ? (
+      {status === 'unauthenticated' ? (
         <Link href='/login' className='login'>Login</Link>
       ) : (
         <>
           <Link href='/write'>Write</Link>
-          <span className='cursor-pointer'>Logout</span>
+          <span onClick={() => signOut()} className='cursor-pointer'>Logout</span>
         </>
       )}
       <Bars3Icon className='burger' onClick={() => setOpen(!open)}/>
@@ -28,7 +29,7 @@ const AuthLinks = () => {
           <Link href='/about' className='link-burger'>About</Link>
           <Link href='/contact' className='link-burger'>Contact</Link>
           <Link href='/blog' className='link-burger'>Blog</Link>
-          {status === 'notauthenticated' ? (
+          {status === 'unauthenticated' ? (
             <Link href='/login' className='link-burger'>Login</Link>
           ) : (
             <>

@@ -5,6 +5,7 @@ import './globals.css'
 import Navbar from '@/components/navbar/Navbar'
 import Footer from '@/components/footer/Footer'
 import Particle from '@/components/particles/Particle'
+import AuthProvider from '@/providers/AuthProvider'
 
 const poppins = Poppins({ 
   subsets: ['latin'], 
@@ -25,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} font-primary`}>
-        <Navbar />
-          {children}
-        <Footer />
+        <AuthProvider>
+          <Navbar />
+            {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   )

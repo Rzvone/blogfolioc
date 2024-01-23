@@ -133,6 +133,10 @@ body::-webkit-scrollbar {
     @apply w-[150px] border-none p-4 bg-red-800 text-white cursor-pointer rounded-lg hover:bg-red-400 hover:text-black font-semibold lg:mx-auto md:mx-auto sm:mx-auto xs:mx-auto 2xs:mx-auto 3xs:mx-auto
   }
 
+  .btns:disabled {
+    @apply hidden
+  }
+
   /* Footer */
 
   .footer {
@@ -155,5 +159,17 @@ body::-webkit-scrollbar {
 
   .socialButton {
     @apply p-5 rounded-lg font-bold cursor-pointer
+  }
+
+
+  /* tiny MCE */
+  .mce-content-body {
+    @apply bg-slate-950 text-white p-5 rounded-lg
+  }
+
+
+  /* write page */
+  .addButton {
+    @apply bg-transparent 
   }
 }
